@@ -4,7 +4,7 @@
 
 > "I'm quite illiterate, but I read a lot." - chatGPT
 
-Inspired by the introspective and self-critical nature of Holden Caulfield, caulfieldAI is a chatbot that strives to understand and empathize with the user's emotions while maintaining a humble and self-aware persona.
+Inspired by the introspective and self-critical nature of Holden Caulfield, caulfieldAI is a chatbot that strives to understand and empathize with the user's emotions.
 
 ## Overview
 
