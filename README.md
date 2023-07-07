@@ -1,6 +1,6 @@
 ## caulfieldAI: An Empathetic and Self-Critical Chatbot
 
-![cauilfield](https://github.com/EveryOneIsGross/caulfield/assets/23621140/083e2794-51b8-41bc-890c-0fed30e5f3d4)
+![caulfieldAI](https://github.com/EveryOneIsGross/caulfield/assets/23621140/ef297d05-e40a-4b8c-b446-66cfd0db29aa)
 
 > "I'm quite illiterate, but I read a lot." - chatGPT
 
