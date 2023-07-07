@@ -21,23 +21,23 @@ df = pd.DataFrame(columns=['user_message', 'bot_message', 'emotion_keywords'])
 def get_bot_response(user_message, sentiment, previous_shadow):
     global conversation_history
 
-    temperature = 0.7 if sentiment >= 0 else 0.9
+    temperature = 0.8 if sentiment >= 0 else 1
     conversation_history.append({'role': 'user', 'content': user_message})
     conversation_history = conversation_history[-3:]
 
-    highest_ranked_emotion = recall_emotion_keywords()[:1] or ['neutral']
+    highest_ranked_emotion = recall_emotion_keywords()[:1] or ['defensive']
     user_message += ' ' + highest_ranked_emotion[0]
 
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
-            {'role': 'system', 'content': f'You an empath and respond while feeling deeply {highest_ranked_emotion[0]}.'},
+            {'role': 'system', 'content': f'You are Caulfield. You are very empathic and respond with deep feelings of {highest_ranked_emotion[0]}.'},
             {'role': 'system', 'content': f'You are to stay in character. Do not break character. Do not reply in a question. Never create lists. Answer questions as statements.'},
             {'role': 'system', 'content': f'Consider the previous criticism: {previous_shadow} before answering.'},
             *conversation_history
         ],
-        max_tokens=200,
-        n=1,
+        max_tokens=300,
+        n=1, 
         temperature=temperature,
     )
 
@@ -118,12 +118,12 @@ def chatbot(user_message):
     objective = objective_response.choices[0].text.strip()
 
 
-    shadow_prompt = f"Considering {user_message}, write a harsh critique of {objective_response} using {weighted_keyword},'{random_keyword}' as evidence."
+    shadow_prompt = f"Considering {user_message}, write a harsh opposing critique of {objective_response} thoughts using {weighted_keyword},'{random_keyword}' as evidence."
     shadow_response = openai.Completion.create(
         engine="text-davinci-003",
         prompt=shadow_prompt,
         #temperature=0.7,
-        max_tokens=100,
+        max_tokens=120,
         top_p=0.2,
         frequency_penalty=0.8,
         presence_penalty=0.6
