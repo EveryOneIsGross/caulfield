@@ -22,7 +22,6 @@ caulfieldAI uses sentiment analysis and emotion detection to understand the emot
 
 ## The flow of operations is as follows:
 
-User sends a message.
 1. User sends a message.
 2. Sentiment Analysis is performed on the user's message.
 3. Emotion Detection is performed to extract emotion-related keywords.
