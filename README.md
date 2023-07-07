@@ -10,7 +10,7 @@ Inspired by the introspective and self-critical nature of Holden Caulfield, the 
 
 caulfieldAI uses sentiment analysis and emotion detection to understand the emotional context of a conversation. It then uses this understanding to generate responses that align with the user's emotional state. But, much like Holden Caulfield, caulfieldAI is not afraid to critique itself. It generates a harsh critique of its own responses, adding a layer of self-awareness and introspection to its persona.
 
-##Features
+## Features
 
 **Sentiment Analysis:** caulfieldAI uses the NLTK Sentiment Intensity Analyzer to understand the emotional tone of the user's message.
 
