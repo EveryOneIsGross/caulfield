@@ -1,5 +1,6 @@
 ## caulfieldAI: An Empathetic and Self-Critical Chatbot
-"I'm quite illiterate, but I read a lot." - J.D. Salinger, The Catcher in the Rye
+
+> "I'm quite illiterate, but I read a lot." - J.D. Salinger, The Catcher in the Rye
 
 Inspired by the introspective and self-critical nature of Holden Caulfield, the protagonist of J.D. Salinger's "The Catcher in the Rye", caulfieldAI is a chatbot that strives to understand and empathize with the user's emotions while maintaining a humble and self-aware persona.
 
